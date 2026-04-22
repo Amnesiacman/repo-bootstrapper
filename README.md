@@ -1,5 +1,7 @@
 # repo-bootstrapper
 
+![CI](https://github.com/Amnesiacman/repo-bootstrapper/actions/workflows/ci.yml/badge.svg)
+
 `repo-bootstrapper` создает базовую структуру нового репозитория с полезными настройками для CI-ready старта.
 
 ## Что генерирует v0.1
