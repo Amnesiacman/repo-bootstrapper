@@ -1,27 +1,17 @@
 # repo-bootstrapper
 
-![CI](https://github.com/Amnesiacman/repo-bootstrapper/actions/workflows/ci.yml/badge.svg)
+[Русская версия](README.ru.md)
 
-`repo-bootstrapper` создает базовую структуру нового репозитория с полезными настройками для CI-ready старта.
+Template-based repository bootstrap tool with CI-ready defaults.
 
-## Что генерирует v0.1
-
-- `README.md`
-- `.gitignore`
-- `pyproject.toml`
-- `.github/workflows/ci.yml`
-- `src/<package_name>/__init__.py`
-- `tests/test_smoke.py`
-
-## Использование
+## Quick start
 
 ```bash
-python3 -m pip install -e .
-repo-bootstrapper init --name my-project --target ./my-project
+# Read CLI help
+# (examples may differ by project)
 ```
 
-Dry-run (без записи файлов):
+## Documentation
 
-```bash
-repo-bootstrapper init --name my-project --target ./my-project --dry-run --format json
-```
+- See project files and workflow docs in this repository.
+- For Russian documentation, open `README.ru.md`.
