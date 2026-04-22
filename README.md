@@ -2,16 +2,24 @@
 
 [Русская версия](README.ru.md)
 
-Template-based repository bootstrap tool with CI-ready defaults.
+Bootstrap a new repository structure with useful defaults.
 
-## Quick start
+## Generated scaffold
+
+- `README.md`
+- `.gitignore`
+- `pyproject.toml`
+- `.github/workflows/ci.yml`
+- `src/<package>/__init__.py`
+- `tests/test_smoke.py`
+
+## Usage
 
 ```bash
-# Read CLI help
-# (examples may differ by project)
+python3 main.py init --name my-project --target ./my-project
+python3 main.py init --name my-project --target ./my-project --dry-run --format json
 ```
 
-## Documentation
+## CI usage
 
-- See project files and workflow docs in this repository.
-- For Russian documentation, open `README.ru.md`.
+Use dry-run + JSON to preview generation in automation workflows.

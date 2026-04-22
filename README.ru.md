@@ -2,16 +2,24 @@
 
 [English version](README.md)
 
-Генератор стартовой структуры репозитория с CI-ready настройками.
+Генератор стартовой структуры нового репозитория с полезными настройками по умолчанию.
 
-## Быстрый старт
+## Что создаётся
+
+- `README.md`
+- `.gitignore`
+- `pyproject.toml`
+- `.github/workflows/ci.yml`
+- `src/<package>/__init__.py`
+- `tests/test_smoke.py`
+
+## Использование
 
 ```bash
-# Посмотрите справку CLI
-# (конкретные команды зависят от проекта)
+python3 main.py init --name my-project --target ./my-project
+python3 main.py init --name my-project --target ./my-project --dry-run --format json
 ```
 
-## Документация
+## Использование в CI
 
-- Детали смотрите в файлах проекта и workflow-конфигурациях в этом репозитории.
-- Для англоязычной документации откройте `README.md`.
+Dry-run + JSON-режим удобно использовать для предпросмотра генерации в автоматических сценариях.
