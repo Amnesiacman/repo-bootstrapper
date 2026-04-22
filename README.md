@@ -1,22 +1,25 @@
 # repo-bootstrapper
 
-Template-based new repository bootstrapper with CI and standards.
+`repo-bootstrapper` создает базовую структуру нового репозитория с полезными настройками для CI-ready старта.
 
-## MVP status
+## Что генерирует v0.1
 
-- Basic CLI scaffold is ready (`main.py`).
-- Supports `--format text|json` and `--dry-run`.
-- Intended as a foundation for iterative feature work.
+- `README.md`
+- `.gitignore`
+- `pyproject.toml`
+- `.github/workflows/ci.yml`
+- `src/<package_name>/__init__.py`
+- `tests/test_smoke.py`
 
-## Quick start
+## Использование
 
 ```bash
-python3 main.py --help
-python3 main.py --format json --dry-run
+python3 -m pip install -e .
+repo-bootstrapper init --name my-project --target ./my-project
 ```
 
-## Next steps
+Dry-run (без записи файлов):
 
-1. Add domain-specific command set and config file support.
-2. Add tests and GitHub Actions workflow.
-3. Package and publish first tagged release.
+```bash
+repo-bootstrapper init --name my-project --target ./my-project --dry-run --format json
+```
