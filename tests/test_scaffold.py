@@ -19,4 +19,3 @@ def test_bootstrap_writes_files(tmp_path: Path):
     bootstrap(target, "my-app", dry_run=False)
     assert (target / "README.md").exists()
     assert (target / "src" / "my_app" / "__init__.py").exists()
-

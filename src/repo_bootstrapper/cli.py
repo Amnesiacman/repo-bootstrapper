@@ -33,4 +33,3 @@ def main(argv=None) -> int:
         for path in result["created"]:
             print(f"- {path}")
     return 0
-

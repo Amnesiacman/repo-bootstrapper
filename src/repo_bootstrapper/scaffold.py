@@ -57,4 +57,3 @@ def bootstrap(target: Path, project_name: str, dry_run: bool = False) -> dict:
         "dry_run": dry_run,
         "created": planned,
     }
-

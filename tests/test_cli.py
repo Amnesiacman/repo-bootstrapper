@@ -19,4 +19,3 @@ def test_cli_writes(tmp_path: Path):
     code = main(["init", "--name", "demo", "--target", str(target)])
     assert code == 0
     assert (target / "README.md").exists()
-
